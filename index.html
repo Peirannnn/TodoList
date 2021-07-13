@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?fhkvh6');
+            src:  url('fonts/icomoon.eot?fhkvh6#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?fhkvh6') format('truetype'),
+            url('fonts/icomoon.woff?fhkvh6') format('woff'),
+            url('fonts/icomoon.svg?fhkvh6#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+<!--nav-->
+<div class="nav-outer">
+    <label>ToDoList</label>
+    <button class="sort mouseup">sort</button>
+    <span class="add rotate" ></span>
+    <span class="calendar"></span>
+    <span class="search"></span>
+    <input type="text" class="search-bar" placeholder="search item">
+</div>
+
+<!--current-->
+<div class="current-outer">
+    <img src="img/background2.jpeg">
+    <ul id="current">
+    </ul>
+</div>
+
+<!--add-->
+<div class="add-outer">
+    <span>Create new to-do</span>
+    <span id="error">content should not be empty</span>
+    <a href="#" id="create">Create</a>
+    <a href="#" id="cancel">Cancel</a>
+    <form>
+        <input type="text" placeholder="What would you like to do?">
+    </form>
+    <div class="priority">priority:
+        <button class="priority-current" id="high">high</button>
+        <button id="medium">medium</button>
+        <button id="low">low</button>
+    </div>
+</div>
+<div class="bg"></div>
+
+
+<!--finished-->
+<div class="finished-outer">
+    <ul id="finished">
+    </ul>
+</div>
+
+</body>
+</html>

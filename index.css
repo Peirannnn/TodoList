@@ -1,0 +1,253 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(241,242,245);
+}
+
+/*nav*/
+.mousedown{
+    background-color: rgb(75, 131, 238);
+    color:white;
+    border: none;
+}
+.mouseup{
+    border: 1px solid rgb(75, 131, 238);
+    background-color: white;
+    color: rgb(75, 131, 238);
+}
+.nav-outer .sort{
+    top: 35px;
+    position: absolute;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 60px;
+    height: 30px;
+    margin-left: 35px;
+}
+
+.nav-outer{
+    margin: 25px auto;
+    height: 50px;
+    width: 95%;
+    background-color: white;
+    line-height: 50px;
+    /*box-shadow: 0 10px 15px #888888;*/
+    border-radius: 15px ;
+}
+.nav-outer label{
+    font-size: 27px;
+    margin-left: 50px;
+    color: rgb(75, 131, 238);
+}
+.nav-outer .search-bar{
+    outline: none;
+    border: none;
+    background-color:rgb(241,242,245);
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    padding-left: 10px;
+    text-indent: 10px;
+    float: right;
+    margin-top: 10px;
+}
+.nav-outer .search{
+    margin-left: 5px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-family: icomoon;
+    color: rgb(75, 131, 238);
+    float: right;
+}
+.nav-outer .calendar{
+    margin-left: 5px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-family: icomoon;
+    color: rgb(75, 131, 238);
+    float: right;
+}
+
+.nav-outer .add{
+    font-family: icomoon;
+    color: rgb(75, 131, 238);
+    float: right;
+    font-size: 20px;
+    margin-right: 40px;
+}
+.r1{
+    -moz-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+}
+
+.r2{
+    -moz-transform:rotate(2deg);
+    -webkit-transform:rotate(2deg);
+    -o-transform:rotate(2deg);
+}
+
+
+/*current*/
+
+.current-outer img{
+    opacity: 0.3;
+    height: 390px;
+}
+
+.already{
+    color: rgb(75, 131, 238);
+}
+.high{
+  color: red;
+}
+.medium{
+    color: orange;
+}
+.low{
+    color: green;
+}
+li:hover{
+    background-color: rgb(250,250,250);
+}
+.current-outer{
+    /*background-image: url("img/background2.jpeg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px 10px;
+    /*background: white;*/
+    border-radius: 10px;
+    overflow: auto;
+}
+#current{
+    margin: 0 auto;
+    width: 100%;
+}
+.checkmark {
+    font-size: 20px;
+    font-family: icomoon;
+    color: rgb(173,175,178);
+    float: right;
+}
+.bin{
+    font-size: 20px;
+    font-family: icomoon;
+    color: rgb(173,175,178);
+    float: right;
+     margin-left: 20px;
+    margin-right: 40px;
+}
+.pencil{
+    font-size: 20px;
+    font-family: icomoon;
+    color: rgb(173,175,178);
+    float: right;
+     margin-left: 20px;              
+}
+.bookmark{
+    font-size: 25px;
+    font-family: icomoon;
+    padding-right: 20px;
+}
+#current>li, #finished>li{
+    font-size: 20px;
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    /*background-color: green;*/
+    list-style: none;
+}
+
+/*add new*/
+.add-outer{
+    display: none;
+    width: 600px;
+    height: 160px;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -320px;
+    z-index: 999;
+    border-radius: 15px;
+    padding: 20px;
+}
+.add-outer span:first-child{
+     font-size: 25px;
+     color: rgb(75, 131, 238);
+}
+.add-outer span:nth-child(2){
+    display: none;
+    margin-left: 30px;
+    font-size: 15px;
+    color: red;
+}
+.add-outer a{
+    margin-right: 10px;
+    float: right;
+    text-decoration: none;
+}
+#create{
+    color: rgb(75, 131, 238);
+}
+#cancel{
+    color: gray;
+}
+.add-outer input{
+    font-size: 15px;
+    padding-left: 40px;
+    width: 520px;
+    height: 50px;
+    position: absolute;
+    top: 65px;
+    left: 47%;
+    margin-left: -280px;
+    background-color: rgb(241,242,245);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+.priority{
+   margin-top: 85px;
+    color: rgb(75, 131, 238);
+    font-size: 20px;
+}
+.priority button{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+}
+.priority-current{
+    color: white;
+    background-color: rgb(75, 131, 238);
+}
+/*bg*/
+.bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+}
+
+/*finished*/
+.finished-outer{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 10px;
+    background: white;
+    border-radius: 10px;
+}
